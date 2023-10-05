@@ -5,8 +5,8 @@ body{
 
 .container{
     position: relative;
-
 }
+
 img.background{
     width: 100%;
     height: auto;
@@ -23,7 +23,7 @@ img.background{
 .name{
     font-size: 8vw;
     color: white;
-    text-shadow: 3px 4px 10px rgb(121,73,81);
+    text-shadow: 3px 4px 10px rgb(121,73,81), 3px 4px 10px rgb(121,73,81);
     text-align: center;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -102,5 +102,54 @@ img.background{
 .prototype{
     transform: translate(-55%, 110%);
     width: 40%;
-    padding-bottom: 5vw;;
+    padding-bottom: 5vw;
+}
+
+.card_wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: left;
+
+}
+
+.card {
+    border:1px solid rgb(121, 73, 81, 0.1);
+    box-shadow: 0 4px 8px 0 rgb(121, 73, 81, 0.6);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 40%;
+    margin: 2%;
+    margin-top: 28%;
+    border-radius: 10px;
+  }
+
+  .c{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+
+h4{
+    color: rgb(121, 73, 81);
+    font-size: 3vw;
+}
+
+p{
+    color: rgb(121, 73, 81, 0.9);
+    font-size: 2vw;
+}
+
+
+@media only screen and (max-device-width: 460px){
+    .card{
+        width: 80%;
+        margin-bottom: 7%;
+        margin-top: 28%;
+    }
+
+    .card1{
+        margin-top: 0%;
+    }
+    
 }
